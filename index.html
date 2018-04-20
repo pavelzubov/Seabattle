@@ -1,0 +1,72 @@
+﻿<html>
+
+<head>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,target-densityDpi=device-dpi, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=0, scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Морской бой</title>
+
+    <link rel="stylesheet" type="text/css" href="newcss.css">
+
+</head>
+
+<body onload="">
+    <div id="ind" class="ind">1</div>
+    <div id="game">
+        <div id="screen4"><span id="congratulations"></span>
+        </div>
+        <div id="screen3"><span>Покеда!</span>
+        </div>
+        <div id="screen2">
+            <div id="canvases">
+                <canvas id="canvas0" width="500" height="500" onclick="">Обновите браузер.</canvas>
+                <canvas id="canvas1" width="500" height="500" onclick="">Обновите браузер.</canvas>
+            </div>
+        </div>
+        <div id="screen1">
+            <div id="controllers">
+                <p id="start">Старт</p>
+            </div>
+        </div>
+    </div>
+    <div id="indicators">
+        <div id="thisMoveInd" class="ind indHide">
+            <span id="bullet">&#8226;</span> 
+            <span id="indText">Твой ход</span>
+        </div>
+        <div id="connectingBlocks">
+            <div id="waitingBlock" class='ind connectingBlocks'>
+                <span id="bullets">
+					<span id="bullet1">&#8226;</span>
+                <span id="bullet2">&#8226;</span>
+                <span id="bullet3">&#8226;</span> 
+                </span>
+
+                <span id="">Ожидаем соперника</span>
+            </div>
+            <div id="connectBlock" class='ind connectingBlocks'>
+                <span id="ok">&#9679;
+				</span>
+                <span id="">Соперник подключился</span>
+            </div>
+            <div id="disconnectBlock" class='ind connectingBlocks'>
+                <span id="disk">&#9679;
+				</span>
+                <span id="">Соперник вышел из игры</span>
+            </div>
+        </div>
+        <div id="exitBlock" class='ind'>
+            <span id="exitPic">
+			</span>
+            <span id="exit">Выйти</span>
+        </div>
+    </div>
+
+
+</body>
+<script src="Model.js"></script>
+<script src="View.js"></script>
+<script src="Controller.js"></script>
+
+</html>
